@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solana Memecoin Scanner</title>
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand" onclick="location.hash='#/dashboard'">
+    <span class="brand-logo">◎</span>
+    <span class="brand-name">Solana Memecoin Scanner</span>
+    <span class="chain-badge">SOLANA</span>
+  </div>
+  <nav class="nav">
+    <a href="#/dashboard" data-route="dashboard">Dashboard</a>
+    <a href="#/favorites" data-route="favorites">Favoris</a>
+    <a href="#/backtest" data-route="backtest">Backtesting</a>
+    <a href="#/control" data-route="control">Centre de contrôle</a>
+    <a href="#/notifications" data-route="notifications" class="notif-link">Notifications <span id="notif-badge" class="badge hidden">0</span></a>
+  </nav>
+  <div class="scanner-status" id="scanner-status" title="État du scanner">—</div>
+</header>
+<main id="app" class="container">
+  <div class="loading">Chargement…</div>
+</main>
+<footer class="footer">
+  Données : DexScreener / GeckoTerminal / Birdeye (optionnel) — Solana uniquement — Historique collecté, jamais réinitialisé — Simulations virtuelles uniquement.
+</footer>
+<script src="/static/vendor/lightweight-charts.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>
